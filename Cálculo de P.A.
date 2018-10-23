@@ -1,0 +1,33 @@
+//CABEÇALHO
+#include <stdio.h>
+#include <locale.h>
+
+int main()
+{
+	setlocale (LC_ALL, "portuguese");
+	
+//VARIÁVEIS	
+	long razao, vinicial, inicio, fim, elemento, contador;		
+//ENTRADA	
+razao=4;
+vinicial=17;
+
+	printf("Digite o valor inicial:\n");
+	scanf("%li", &inicio);
+	printf("Digite o valor final:\n");
+	scanf("%li", &fim);
+
+elemento = vinicial;	
+//CÁLCULOS	
+for (contador=1; contador<=fim; contador++)
+{
+	if (contador>= inicio)
+	{ //SAÌDA
+		printf("%li ", elemento);
+	}
+	elemento=elemento+razao;
+}
+printf("\n");
+	
+return (0);	
+}
